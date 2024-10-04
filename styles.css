@@ -1,13 +1,17 @@
-.Body-1, .Body-2, #section-3, .Body-3 {
-    display: inline-block;  /* Override the block-level behavior of <div> */
-    width: 100%;  /* Ensure sections take up the full width */
+.Body-1, .Body-2, #section-3 {
+    display: inline-block;  
+    width: 100%;  
     margin: 0;
     padding: 20px;
     font-size: 28px;
 }
 
 .Body-1 {
-    background-color: rgb(245, 240, 230);  /* Adds the background color */
+    background-color: rgb(245, 240, 230);
+}
+
+.Body-1 img {
+    max-width: 100%;
 }
 
 #Section-1 {
@@ -28,7 +32,7 @@
 }
 
 #section-3 {
-    background-color: rgb(245, 240, 230);  /* Adds the background color */
+    background-color: rgb(245, 240, 230); 
 }
 
 .Body-3 {
@@ -36,7 +40,8 @@
     gap: 25px;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    padding: 20px;
+    justify-content: center;
+    align-content: center;
 }
 
 .box {
@@ -58,6 +63,7 @@ ul {
     background-color: white;
     position: sticky;
     top: 0;
+    width: 100%;
   }
   
 ul img {
@@ -75,9 +81,29 @@ ul img {
     font-size: 28px;
   }
   
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #182b49;
     color: white;
   }
 
+  @media screen and (max-width: 800px) {
+    ul li{
+        display: none;
+    }
+
+    ul img {
+        max-width: 75%;
+    }
+
+    .Section-1, .Section-2 {
+        font-size: 24px;
+    }
+
+    .Body-1 p, .Body-2 p, .Body-3 {
+        font-size: 20px;
+    }
+
+    .Body-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
