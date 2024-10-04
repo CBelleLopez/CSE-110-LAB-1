@@ -1,0 +1,83 @@
+.Body-1, .Body-2, #section-3, .Body-3 {
+    display: inline-block;  /* Override the block-level behavior of <div> */
+    width: 100%;  /* Ensure sections take up the full width */
+    margin: 0;
+    padding: 20px;
+    font-size: 28px;
+}
+
+.Body-1 {
+    background-color: rgb(245, 240, 230);  /* Adds the background color */
+}
+
+#Section-1 {
+    scroll-margin-top: 144px;
+}
+
+.Body-2 {
+    background-image: url(https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg);
+    color: white;
+}
+
+#Section-2 {
+    scroll-margin-top: 144px;
+}
+
+#Section-3 {
+    scroll-margin-top: 144px;
+}
+
+#section-3 {
+    background-color: rgb(245, 240, 230);  /* Adds the background color */
+}
+
+.Body-3 {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding: 20px;
+}
+
+.box {
+    background-color: #182b49;
+    color: white;
+    max-height: 500px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: sticky;
+    top: 0;
+  }
+  
+ul img {
+    max-width: 400px;
+}
+
+
+  li a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 28px;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #182b49;
+    color: white;
+  }
+
